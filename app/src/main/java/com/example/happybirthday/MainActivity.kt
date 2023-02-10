@@ -23,7 +23,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-
+                BirthDayGreetingWithText(message = "Happy Birthday Gustavo!", from = "-from Paminha")
                 }
             }
         }
@@ -32,37 +32,16 @@ class MainActivity : ComponentActivity() {
 
 
 @Composable
-fun BirthDayGreetingWithText(message: String){
+fun BirthDayGreetingWithText(message: String, from: String){
 Text(text = message, fontSize = 26.sp)
-}
-
-@Composable
-fun FancyButton(){
-
-}
-@Composable
-fun BackButtonHandler(){
-
+    Text(text = from, fontSize = 14.sp)
 }
 
 
-@Composable
-fun DrawTextField(){
-
-}
-
-@Composable
-fun Bright(){
-
-}
-@Composable
-fun RoundIcon(){
-
-}
 @Preview(showBackground = true)
 @Composable
 fun BirthDayGreetingWithTextPreview() {
     HappyBirthdayTheme {
-        BirthDayGreetingWithText(message = "Happy Birthday Gustavo!!!")
+        BirthDayGreetingWithText(message = "Happy Birthday Gustavo!", from = "-from Paminha")
     }
 }
