@@ -1,5 +1,6 @@
 package com.example.happybirthday
 
+import android.content.res.Configuration.UI_MODE_NIGHT_MASK
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -33,6 +34,8 @@ class MainActivity : ComponentActivity() {
 }
 
 
+
+
 @Composable
 fun BirthDayGreetingWithText(message: String, from: String){
     Column{
@@ -41,12 +44,15 @@ fun BirthDayGreetingWithText(message: String, from: String){
     }
 
 }
+@Composable
+fun NewFunc(){
 
+}
 
-@Preview(showBackground = true)
+@Preview(showBackground = true, name = "My Preview")
 @Composable
 fun BirthDayGreetingWithTextPreview() {
     HappyBirthdayTheme {
-        BirthDayGreetingWithText(message = "Happy Birthday Gustavo!", from = "-from Android")
+        BirthDayGreetingWithText(message = "Happy Birthday Gustavo!", from = "- from Android.")
     }
 }
