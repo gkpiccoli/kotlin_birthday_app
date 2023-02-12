@@ -4,5 +4,6 @@
 ## O que eu aprendi?
 
 - Como escrever funções de composição, como Text, Column e Row.
- - Como mostrar texto no app.
-  - Como formatar o texto, mudar o tamanho do texto e da fonte.
+- Como mostrar texto no app.
+- Como formatar o texto, mudar o tamanho do texto e da fonte.
+- Resource Manager: Ferramenta que ajuda a importar arquivos para o projeto.
