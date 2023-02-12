@@ -43,6 +43,11 @@ fun BirthDayGreetingWithText(message: String, from: String){
 
 }
 
+@Composable
+fun BirthdayGreetingWithImage(message: String, from: String){
+
+}
+
 
 @Preview(showBackground = true, name = "My Preview")
 @Composable
