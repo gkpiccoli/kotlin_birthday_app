@@ -42,10 +42,7 @@ fun BirthDayGreetingWithText(message: String, from: String){
     }
 
 }
-@Composable
-fun NewFunc(){
 
-}
 
 @Preview(showBackground = true, name = "My Preview")
 @Composable
