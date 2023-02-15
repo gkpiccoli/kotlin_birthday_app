@@ -28,7 +28,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                BirthDayGreetingWithText(message = "Happy Birthday Gustavo!", from = "-from Paminha")
+                BirthdayGreetingWithImage(message = "Happy Birthday Pamela!", from = "-from Gustavo")
                 }
             }
         }
@@ -49,11 +49,12 @@ fun BirthDayGreetingWithText(message: String, from: String){
 
 @Composable
 fun BirthdayGreetingWithImage(message: String, from: String){
-    val image = painterResource(id = R.drawable.androidparty);
+    val image = painterResource(id = R.drawable.androidparty)
   Box {
 
       Image(painter = image, contentDescription = null )
-      
+      BirthDayGreetingWithText(message = message, from = from)
+
   }
 }
 
@@ -63,5 +64,6 @@ fun BirthdayGreetingWithImage(message: String, from: String){
 fun BirthDayGreetingWithTextPreview() {
     HappyBirthdayTheme {
         BirthdayGreetingWithImage(message = "Happy Birthday Gustavo!", from = "- from Android.")
+
     }
 }
