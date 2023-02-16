@@ -13,7 +13,6 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.semantics.Role.Companion.Image
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
 import com.example.happybirthday.ui.theme.HappyBirthdayTheme
@@ -34,31 +33,21 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
-
-
-
-
 @Composable
 fun BirthDayGreetingWithText(message: String, from: String){
     Column{
         Text(text = message, fontSize = 26.sp)
         Text(text = from, fontSize = 14.sp)
     }
-
 }
-
 @Composable
 fun BirthdayGreetingWithImage(message: String, from: String){
     val image = painterResource(id = R.drawable.androidparty)
   Box {
-
       Image(painter = image, contentDescription = null )
       BirthDayGreetingWithText(message = message, from = from)
-
   }
 }
-
-
 @Preview(showBackground = false)
 @Composable
 fun BirthDayGreetingWithTextPreview() {
