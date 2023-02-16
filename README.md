@@ -7,4 +7,4 @@
 - Como mostrar texto no app.
 - Como formatar o texto, mudar o tamanho do texto e da fonte.
 - Resource Manager: Ferramenta que ajuda a importar arquivos para o projeto.
-- Modificadores: Decorar ou adicionar comportamentos da UI do Jetpack Compose.
+- Modificadores: Decorar ou adicionar comportamentos aos elementos da UI do Jetpack Compose.
