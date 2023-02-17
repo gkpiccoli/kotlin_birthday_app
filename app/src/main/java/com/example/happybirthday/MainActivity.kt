@@ -9,10 +9,12 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.happybirthday.ui.theme.HappyBirthdayTheme
 
@@ -35,9 +37,13 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun BirthDayGreetingWithText(message: String, from: String){
     Column{
-        Text(text = message, fontSize = 26.sp,
-        modifier = Modifier.fillMaxWidth())
-        Text(text = from, fontSize = 14.sp)
+        Text(text = message, fontSize = 32.sp,
+            modifier = Modifier
+                .fillMaxWidth()
+                .wrapContentWidth(Alignment.Start)
+                .padding(start = 16.dp, top = 16.dp)
+        )
+        Text(text = from, fontSize = 24.sp)
     }
 }
 @Composable
