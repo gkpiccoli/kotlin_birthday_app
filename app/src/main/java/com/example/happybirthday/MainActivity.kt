@@ -28,7 +28,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    BirthdayGreetingWithImage(message = "Happy Birthday Pamela!", from = "-from Gustavo")
+                    BirthdayGreetingWithImage(message = getString(R.string.happy_birthday_text), from = "-from Gustavo")
                 }
             }
         }

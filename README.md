@@ -8,3 +8,4 @@
 - Como formatar o texto, mudar o tamanho do texto e da fonte.
 - Resource Manager: Ferramenta que ajuda a importar arquivos para o projeto.
 - Modificadores: Decorar ou adicionar comportamentos aos elementos da UI do Jetpack Compose.
+- Boas práticas: Extract Resource > extract_string_name / No painel, app > res > values > strings.xml. Vou listar as strings de texto do aplicativo, facilitando a tradução ou reutilização de código.
