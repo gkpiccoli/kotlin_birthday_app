@@ -42,7 +42,7 @@ fun BirthDayGreetingWithText(message: String, from: String){
             modifier = Modifier
                 .fillMaxWidth()
                 .wrapContentWidth(Alignment.CenterHorizontally)
-                .padding(start = 26.dp, top = 26.dp)
+                .padding(start = 26.dp, top = 26.dp, end = 24.dp)
 
                 )
 
